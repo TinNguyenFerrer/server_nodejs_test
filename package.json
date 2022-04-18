@@ -2,9 +2,9 @@
   "name": "server_nodejs_test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +22,14 @@
   },
   "homepage": "https://github.com/yommh/server_nodejs_test#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "formidable": "^2.0.1"
   },
   "devDependencies": {
+    "body-parser": "^1.20.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
     "nodemon": "^2.0.15"
   }
 }
